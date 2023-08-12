@@ -21,4 +21,27 @@ Sebuah sistem untuk memudahkan masyarakat dalam mencari dan menambahkan produk u
 
 - Codeigniter 3
 - PHP Version: 7.1.29
+- Boostrap 4
+
+## Hak Akses
+Terdapat 2 aktor pada aplikasi / sistem informasi ini
+
+## Hak Akses Admin
+Admin dapat melakukan hal-hal berikut.
+
+- Login
+- Melihat grafik usaha umkm yang terdaftar
+- Mengelola data umkm
+- Mengelola data user
+- Mengelola data peta umkm
+- Mengelola data berita
+- Export data
+- Ganti password
+- logout
+
+## Hak Akses User
+User memiliki akses sebagai berikut
+
+- Mengisi data umkm
+- Mengisi data produk umkm
 
