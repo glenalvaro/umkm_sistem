@@ -1,0 +1,118 @@
+
+/*button dark 1*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
+
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+em {
+    margin-left: 10px;
+    font-size: 0.8em;
+  }
+.theme-switch {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 45px;
+  margin-left: 15px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 12px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 12px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*botton dark 2*/
+
+.dark-mode-2 #checkbox{
+  visibility: hidden;
+}
+
+.dark-mode-2 .btn-bahasa .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 33px;
+  height: 17px;
+  background-color: #dd8888;
+  display: flex;
+  border-radius:30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  cursor: pointer;
+  position: relative;
+  transform: scale(1.5);
+  margin-top: 17px;
+  margin-left: 15px;
+}
+
+.ball {
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  position: absolute;
+  top: 1.1px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.dark-mode-2 i{
+  font-size: 10px;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(15px);
+}
+
+.fa-moon {
+  color: black;
+}
+
+.fa-sun {
+  color: lightyellow;
+}
